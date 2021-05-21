@@ -12,6 +12,8 @@ var place1 = L.marker([40.785091, -73.134766]).bindPopup("Place 1"),
     place3 = L.marker([40.754932, -73.984012]).bindPopup("Place 3");
 
 var markers = new L.MarkerClusterGroup();
-markers.addLayer(place1).addLayer(place2).addLayer(place3);
+markers.addLayer(place1)
+       .addLayer(place2)
+       .addLayer(place3);
 map.addLayer(markers);
 
